@@ -7,16 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0206AA1FA2173000AA8BE5 /* tenSample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0206A91FA2173000AA8BE5 /* tenSample.storyboard */; };
+		CB0206AC1FA2174C00AA8BE5 /* TenSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0206AB1FA2174C00AA8BE5 /* TenSampleViewController.swift */; };
+		CB0206B11FA21CDE00AA8BE5 /* TenSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0206AF1FA21CDE00AA8BE5 /* TenSampleTableViewCell.swift */; };
+		CB0206B21FA21CDE00AA8BE5 /* TenSampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB0206B01FA21CDE00AA8BE5 /* TenSampleTableViewCell.xib */; };
+		CB0206B41FA22A2200AA8BE5 /* TestCellThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0206B31FA22A2200AA8BE5 /* TestCellThings.swift */; };
+		CB08EB7E1FA8A156003CB66C /* MakeCollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB08EB7D1FA8A156003CB66C /* MakeCollectionView.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
+		CB08EB801FA8A173003CB66C /* MakeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB08EB7F1FA8A173003CB66C /* MakeCollectionViewController.swift */; };
+		CB1B7B951FBDCCC2009521BF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B7B941FBDCCC2009521BF /* View.swift */; };
+		CB1F61721FD0287A00B5F844 /* TenExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1F61711FD0287A00B5F844 /* TenExample.swift */; };
+		CB1F61741FD0288B00B5F844 /* TenExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1F61731FD0288B00B5F844 /* TenExample.storyboard */; };
+		CB1F61771FD02A0700B5F844 /* TenExampleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1F61761FD02A0700B5F844 /* TenExampleButton.swift */; };
+		CB22071F1FBB1EB3006B8FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB22071E1FBB1EB3006B8FD5 /* LaunchScreen.storyboard */; };
+		CB263A7A1FB09B80003D0DB2 /* GurunaviAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB263A791FB09B80003D0DB2 /* GurunaviAPI.storyboard */; };
+		CB263A7C1FB09B96003D0DB2 /* GurunaviAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB263A7B1FB09B96003D0DB2 /* GurunaviAPIViewController.swift */; };
+		CB5196EE1FA5E6C000384439 /* MakeCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5196ED1FA5E6C000384439 /* MakeCheckViewController.swift */; };
+		CB5196F01FA5E6D200384439 /* MakeCheckList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5196EF1FA5E6D200384439 /* MakeCheckList.storyboard */; };
 		CBB5AC451F9B397600C82907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB5AC441F9B397600C82907 /* AppDelegate.swift */; };
 		CBB5AC471F9B397600C82907 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB5AC461F9B397600C82907 /* ViewController.swift */; };
 		CBB5AC4A1F9B397600C82907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB5AC481F9B397600C82907 /* Main.storyboard */; };
 		CBB5AC4C1F9B397600C82907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB5AC4B1F9B397600C82907 /* Assets.xcassets */; };
 		CBB5AC4F1F9B397600C82907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB5AC4D1F9B397600C82907 /* LaunchScreen.storyboard */; };
-		CBB5AC571F9B4EDF00C82907 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB5AC561F9B4EDF00C82907 /* CustomPresentationController.swift */; };
 		CBB5AC591F9B56B100C82907 /* CustomPresentationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB5AC581F9B56B100C82907 /* CustomPresentationController.storyboard */; };
+		CBCF70641FB873DD002C98B6 /* TrainingAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCF70631FB873DD002C98B6 /* TrainingAPIViewController.swift */; };
+		CBCF70661FB873EE002C98B6 /* TrainingAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCF70651FB873EE002C98B6 /* TrainingAPI.storyboard */; };
+		CBF692E51FB33073002107D8 /* ExWhetherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF692E41FB33073002107D8 /* ExWhetherViewController.swift */; };
+		CBF692E71FB33087002107D8 /* ExWhether.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF692E61FB33087002107D8 /* ExWhether.storyboard */; };
+		CBF692E91FB33122002107D8 /* ExWhetherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF692E81FB33122002107D8 /* ExWhetherTableViewController.swift */; };
+		CBF7A2BE1FA9F69900241461 /* CollectionViewSecond.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF7A2BD1FA9F69900241461 /* CollectionViewSecond.storyboard */; };
+		CBF7A2C01FA9F6AC00241461 /* CollectionViewSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7A2BF1FA9F6AC00241461 /* CollectionViewSecondViewController.swift */; };
+		CBF7A2C21FA9F6ED00241461 /* PrototypeViewSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7A2C11FA9F6ED00241461 /* PrototypeViewSizing.swift */; };
+		CBF7A2C41FA9FC8100241461 /* PropotionalSizingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF7A2C31FA9FC8100241461 /* PropotionalSizingCell.swift */; };
+		CBFB24AE1FAC99010040B611 /* SureOfLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFB24AD1FAC99010040B611 /* SureOfLocationViewController.swift */; };
+		CBFB24B01FAC99100040B611 /* SureOfLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFB24AF1FAC99100040B611 /* SureOfLocation.storyboard */; };
+		D29DC3B0728D69D2B79E9DBB /* Pods_Mokumoku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4237BEEC8F383CC48195A0E8 /* Pods_Mokumoku.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4237BEEC8F383CC48195A0E8 /* Pods_Mokumoku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mokumoku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8A33A7109C732D93E1F980 /* Pods-Mokumoku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mokumoku.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mokumoku/Pods-Mokumoku.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0206A91FA2173000AA8BE5 /* tenSample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tenSample.storyboard; sourceTree = "<group>"; };
+		CB0206AB1FA2174C00AA8BE5 /* TenSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenSampleViewController.swift; sourceTree = "<group>"; };
+		CB0206AF1FA21CDE00AA8BE5 /* TenSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenSampleTableViewCell.swift; sourceTree = "<group>"; };
+		CB0206B01FA21CDE00AA8BE5 /* TenSampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TenSampleTableViewCell.xib; sourceTree = "<group>"; };
+		CB0206B31FA22A2200AA8BE5 /* TestCellThings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellThings.swift; sourceTree = "<group>"; };
+		CB08EB7D1FA8A156003CB66C /* MakeCollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeCollectionView.storyboard; sourceTree = "<group>"; };
+		CB08EB7F1FA8A173003CB66C /* MakeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCollectionViewController.swift; sourceTree = "<group>"; };
+		CB1B7B941FBDCCC2009521BF /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		CB1F61711FD0287A00B5F844 /* TenExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenExample.swift; sourceTree = "<group>"; };
+		CB1F61731FD0288B00B5F844 /* TenExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TenExample.storyboard; sourceTree = "<group>"; };
+		CB1F61761FD02A0700B5F844 /* TenExampleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenExampleButton.swift; sourceTree = "<group>"; };
+		CB22071E1FBB1EB3006B8FD5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB263A791FB09B80003D0DB2 /* GurunaviAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GurunaviAPI.storyboard; sourceTree = "<group>"; };
+		CB263A7B1FB09B96003D0DB2 /* GurunaviAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GurunaviAPIViewController.swift; sourceTree = "<group>"; };
+		CB5196ED1FA5E6C000384439 /* MakeCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCheckViewController.swift; sourceTree = "<group>"; };
+		CB5196EF1FA5E6D200384439 /* MakeCheckList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MakeCheckList.storyboard; sourceTree = "<group>"; };
 		CBB5AC411F9B397600C82907 /* Mokumoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mokumoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB5AC441F9B397600C82907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBB5AC461F9B397600C82907 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +69,19 @@
 		CBB5AC4B1F9B397600C82907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBB5AC4E1F9B397600C82907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBB5AC501F9B397600C82907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBB5AC561F9B4EDF00C82907 /* CustomPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
 		CBB5AC581F9B56B100C82907 /* CustomPresentationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomPresentationController.storyboard; sourceTree = "<group>"; };
+		CBCF70631FB873DD002C98B6 /* TrainingAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAPIViewController.swift; sourceTree = "<group>"; };
+		CBCF70651FB873EE002C98B6 /* TrainingAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrainingAPI.storyboard; sourceTree = "<group>"; };
+		CBF692E41FB33073002107D8 /* ExWhetherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExWhetherViewController.swift; sourceTree = "<group>"; };
+		CBF692E61FB33087002107D8 /* ExWhether.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExWhether.storyboard; sourceTree = "<group>"; };
+		CBF692E81FB33122002107D8 /* ExWhetherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExWhetherTableViewController.swift; sourceTree = "<group>"; };
+		CBF7A2BD1FA9F69900241461 /* CollectionViewSecond.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionViewSecond.storyboard; sourceTree = "<group>"; };
+		CBF7A2BF1FA9F6AC00241461 /* CollectionViewSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSecondViewController.swift; sourceTree = "<group>"; };
+		CBF7A2C11FA9F6ED00241461 /* PrototypeViewSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeViewSizing.swift; sourceTree = "<group>"; };
+		CBF7A2C31FA9FC8100241461 /* PropotionalSizingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropotionalSizingCell.swift; sourceTree = "<group>"; };
+		CBFB24AD1FAC99010040B611 /* SureOfLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SureOfLocationViewController.swift; sourceTree = "<group>"; };
+		CBFB24AF1FAC99100040B611 /* SureOfLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SureOfLocation.storyboard; sourceTree = "<group>"; };
+		F71F0218E5E67A68DFBB6729 /* Pods-Mokumoku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mokumoku.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mokumoku/Pods-Mokumoku.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +89,87 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29DC3B0728D69D2B79E9DBB /* Pods_Mokumoku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15174CCE5C7976895B912C7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C8A33A7109C732D93E1F980 /* Pods-Mokumoku.debug.xcconfig */,
+				F71F0218E5E67A68DFBB6729 /* Pods-Mokumoku.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DB5BBCF021D8752EFD8EA2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4237BEEC8F383CC48195A0E8 /* Pods_Mokumoku.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB0206A81FA2170000AA8BE5 /* iPhone X */ = {
+			isa = PBXGroup;
+			children = (
+				CB0206AB1FA2174C00AA8BE5 /* TenSampleViewController.swift */,
+				CB0206A91FA2173000AA8BE5 /* tenSample.storyboard */,
+				CB1F61711FD0287A00B5F844 /* TenExample.swift */,
+				CB1F61761FD02A0700B5F844 /* TenExampleButton.swift */,
+				CB1F61731FD0288B00B5F844 /* TenExample.storyboard */,
+				CB0206AF1FA21CDE00AA8BE5 /* TenSampleTableViewCell.swift */,
+				CB0206B01FA21CDE00AA8BE5 /* TenSampleTableViewCell.xib */,
+				CB0206B31FA22A2200AA8BE5 /* TestCellThings.swift */,
+			);
+			path = "iPhone X";
+			sourceTree = "<group>";
+		};
+		CB08EB7C1FA8A12E003CB66C /* makeCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CB08EB7F1FA8A173003CB66C /* MakeCollectionViewController.swift */,
+				CB08EB7D1FA8A156003CB66C /* MakeCollectionView.storyboard */,
+			);
+			path = makeCollectionView;
+			sourceTree = "<group>";
+		};
+		CB22071D1FBB1E7C006B8FD5 /* iPhoneXTwo */ = {
+			isa = PBXGroup;
+			children = (
+				CB22071E1FBB1EB3006B8FD5 /* LaunchScreen.storyboard */,
+			);
+			path = iPhoneXTwo;
+			sourceTree = "<group>";
+		};
+		CB263A781FB09B5F003D0DB2 /* GurunaviAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CB263A7B1FB09B96003D0DB2 /* GurunaviAPIViewController.swift */,
+				CB263A791FB09B80003D0DB2 /* GurunaviAPI.storyboard */,
+			);
+			path = GurunaviAPI;
+			sourceTree = "<group>";
+		};
+		CB5196EC1FA5E68E00384439 /* makeCheckList */ = {
+			isa = PBXGroup;
+			children = (
+				CB5196ED1FA5E6C000384439 /* MakeCheckViewController.swift */,
+				CB5196EF1FA5E6D200384439 /* MakeCheckList.storyboard */,
+			);
+			path = makeCheckList;
+			sourceTree = "<group>";
+		};
 		CBB5AC381F9B397600C82907 = {
 			isa = PBXGroup;
 			children = (
 				CBB5AC431F9B397600C82907 /* Mokumoku */,
 				CBB5AC421F9B397600C82907 /* Products */,
+				15174CCE5C7976895B912C7D /* Pods */,
+				9DB5BBCF021D8752EFD8EA2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +184,18 @@
 		CBB5AC431F9B397600C82907 /* Mokumoku */ = {
 			isa = PBXGroup;
 			children = (
+				CB22071D1FBB1E7C006B8FD5 /* iPhoneXTwo */,
+				CBFB83961FB48A9B00BE13C1 /* TrainingAPI */,
+				CBF692E31FB3304C002107D8 /* ExWhether */,
+				CB263A781FB09B5F003D0DB2 /* GurunaviAPI */,
+				CBFB24AC1FAC98C60040B611 /* SureOfLocation */,
+				CBF7A2BC1FA9F67300241461 /* collectionViewSecond */,
+				CB08EB7C1FA8A12E003CB66C /* makeCollectionView */,
+				CB5196EC1FA5E68E00384439 /* makeCheckList */,
+				CB0206A81FA2170000AA8BE5 /* iPhone X */,
 				CBB5AC441F9B397600C82907 /* AppDelegate.swift */,
+				CB1B7B941FBDCCC2009521BF /* View.swift */,
 				CBB5AC461F9B397600C82907 /* ViewController.swift */,
-				CBB5AC561F9B4EDF00C82907 /* CustomPresentationController.swift */,
 				CBB5AC481F9B397600C82907 /* Main.storyboard */,
 				CBB5AC581F9B56B100C82907 /* CustomPresentationController.storyboard */,
 				CBB5AC4B1F9B397600C82907 /* Assets.xcassets */,
@@ -70,6 +205,45 @@
 			path = Mokumoku;
 			sourceTree = "<group>";
 		};
+		CBF692E31FB3304C002107D8 /* ExWhether */ = {
+			isa = PBXGroup;
+			children = (
+				CBF692E41FB33073002107D8 /* ExWhetherViewController.swift */,
+				CBF692E81FB33122002107D8 /* ExWhetherTableViewController.swift */,
+				CBF692E61FB33087002107D8 /* ExWhether.storyboard */,
+			);
+			path = ExWhether;
+			sourceTree = "<group>";
+		};
+		CBF7A2BC1FA9F67300241461 /* collectionViewSecond */ = {
+			isa = PBXGroup;
+			children = (
+				CBF7A2BF1FA9F6AC00241461 /* CollectionViewSecondViewController.swift */,
+				CBF7A2C11FA9F6ED00241461 /* PrototypeViewSizing.swift */,
+				CBF7A2C31FA9FC8100241461 /* PropotionalSizingCell.swift */,
+				CBF7A2BD1FA9F69900241461 /* CollectionViewSecond.storyboard */,
+			);
+			path = collectionViewSecond;
+			sourceTree = "<group>";
+		};
+		CBFB24AC1FAC98C60040B611 /* SureOfLocation */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB24AD1FAC99010040B611 /* SureOfLocationViewController.swift */,
+				CBFB24AF1FAC99100040B611 /* SureOfLocation.storyboard */,
+			);
+			path = SureOfLocation;
+			sourceTree = "<group>";
+		};
+		CBFB83961FB48A9B00BE13C1 /* TrainingAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CBCF70631FB873DD002C98B6 /* TrainingAPIViewController.swift */,
+				CBCF70651FB873EE002C98B6 /* TrainingAPI.storyboard */,
+			);
+			path = TrainingAPI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +251,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBB5AC531F9B397600C82907 /* Build configuration list for PBXNativeTarget "Mokumoku" */;
 			buildPhases = (
+				5649852A87B145A646F15E76 /* [CP] Check Pods Manifest.lock */,
 				CBB5AC3D1F9B397600C82907 /* Sources */,
 				CBB5AC3E1F9B397600C82907 /* Frameworks */,
 				CBB5AC3F1F9B397600C82907 /* Resources */,
+				64AB11F272B99CBAE297C899 /* [CP] Embed Pods Frameworks */,
+				412FEEE0F326EBB9000F76AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +273,9 @@
 		CBB5AC391F9B397600C82907 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+				);
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "野崎勇樹";
@@ -129,23 +309,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF7A2BE1FA9F69900241461 /* CollectionViewSecond.storyboard in Resources */,
 				CBB5AC4F1F9B397600C82907 /* LaunchScreen.storyboard in Resources */,
+				CB08EB7E1FA8A156003CB66C /* MakeCollectionView.storyboard in Resources */,
 				CBB5AC591F9B56B100C82907 /* CustomPresentationController.storyboard in Resources */,
 				CBB5AC4C1F9B397600C82907 /* Assets.xcassets in Resources */,
+				CB5196F01FA5E6D200384439 /* MakeCheckList.storyboard in Resources */,
 				CBB5AC4A1F9B397600C82907 /* Main.storyboard in Resources */,
+				CBF692E71FB33087002107D8 /* ExWhether.storyboard in Resources */,
+				CBFB24B01FAC99100040B611 /* SureOfLocation.storyboard in Resources */,
+				CBCF70661FB873EE002C98B6 /* TrainingAPI.storyboard in Resources */,
+				CB0206AA1FA2173000AA8BE5 /* tenSample.storyboard in Resources */,
+				CB1F61741FD0288B00B5F844 /* TenExample.storyboard in Resources */,
+				CB22071F1FBB1EB3006B8FD5 /* LaunchScreen.storyboard in Resources */,
+				CB0206B21FA21CDE00AA8BE5 /* TenSampleTableViewCell.xib in Resources */,
+				CB263A7A1FB09B80003D0DB2 /* GurunaviAPI.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		412FEEE0F326EBB9000F76AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mokumoku/Pods-Mokumoku-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5649852A87B145A646F15E76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64AB11F272B99CBAE297C899 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mokumoku/Pods-Mokumoku-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CBB5AC3D1F9B397600C82907 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1B7B951FBDCCC2009521BF /* View.swift in Sources */,
+				CBF7A2C21FA9F6ED00241461 /* PrototypeViewSizing.swift in Sources */,
+				CB0206B41FA22A2200AA8BE5 /* TestCellThings.swift in Sources */,
+				CB0206AC1FA2174C00AA8BE5 /* TenSampleViewController.swift in Sources */,
+				CBF692E91FB33122002107D8 /* ExWhetherTableViewController.swift in Sources */,
+				CBF7A2C01FA9F6AC00241461 /* CollectionViewSecondViewController.swift in Sources */,
+				CB1F61771FD02A0700B5F844 /* TenExampleButton.swift in Sources */,
+				CB5196EE1FA5E6C000384439 /* MakeCheckViewController.swift in Sources */,
 				CBB5AC471F9B397600C82907 /* ViewController.swift in Sources */,
+				CBF7A2C41FA9FC8100241461 /* PropotionalSizingCell.swift in Sources */,
+				CB1F61721FD0287A00B5F844 /* TenExample.swift in Sources */,
 				CBB5AC451F9B397600C82907 /* AppDelegate.swift in Sources */,
-				CBB5AC571F9B4EDF00C82907 /* CustomPresentationController.swift in Sources */,
+				CB0206B11FA21CDE00AA8BE5 /* TenSampleTableViewCell.swift in Sources */,
+				CBF692E51FB33073002107D8 /* ExWhetherViewController.swift in Sources */,
+				CBFB24AE1FAC99010040B611 /* SureOfLocationViewController.swift in Sources */,
+				CB08EB801FA8A173003CB66C /* MakeCollectionViewController.swift in Sources */,
+				CB263A7C1FB09B96003D0DB2 /* GurunaviAPIViewController.swift in Sources */,
+				CBCF70641FB873DD002C98B6 /* TrainingAPIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +534,12 @@
 		};
 		CBB5AC541F9B397600C82907 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8A33A7109C732D93E1F980 /* Pods-Mokumoku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Mokumoku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mokumoku.Mokumoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,10 +550,12 @@
 		};
 		CBB5AC551F9B397600C82907 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71F0218E5E67A68DFBB6729 /* Pods-Mokumoku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Mokumoku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mokumoku.Mokumoku;
 				PRODUCT_NAME = "$(TARGET_NAME)";
