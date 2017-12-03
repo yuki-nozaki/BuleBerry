@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         playArray()
         playDictionary()
         
+        let str = NSLocalizedString("str", comment: "")
+        print(str)
     }
     
     override func viewDidLayoutSubviews() {
