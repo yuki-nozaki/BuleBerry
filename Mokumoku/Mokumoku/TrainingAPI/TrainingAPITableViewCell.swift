@@ -10,15 +10,19 @@ import UIKit
 
 class TrainingAPITableViewCell: UITableViewCell {
 
+    @IBOutlet weak var label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.label.textColor = .black
+//        self.label.frame = CGRect(x: <#T##CGFloat#>, y: <#T##CGFloat#>, width: <#T##CGFloat#>, height: <#T##CGFloat#>)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
+    func changeName(to text: String) {
+        self.label.text = text
+    }
 }

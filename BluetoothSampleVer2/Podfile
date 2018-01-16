@@ -7,4 +7,8 @@ target 'BluetoothSampleVer2' do
 
   # Pods for BluetoothSampleVer2
 
+	pod 'RxSwift', '~> 3.4.1'
+	pod 'RxCocoa', '~> 3.4.1'
+	pod 'Charts',	 '~> 3.0.2'
+
 end

@@ -3,3 +3,5 @@
 .markdown
 .xcscheme
 .xcworkspacedata
+
+/Pod

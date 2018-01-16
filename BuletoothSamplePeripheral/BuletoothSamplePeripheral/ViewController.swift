@@ -54,10 +54,10 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate, UITextField
 //        print("Connect Failed...")
 //    }
     
-//    //  ペリフェラルのStatusが変化した時に呼ばれる
-//    func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
-//        print("peripheral state:\(peripheral.state)")
-//    }
+    //  ペリフェラルのStatusが変化した時に呼ばれる
+    func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
+        print("peripheral state:\(peripheral.state)")
+    }
     
     @IBAction func startAdvertise(_ sender: Any) {
         let advertisementData = [CBAdvertisementDataLocalNameKey: "Test Device"]

@@ -18,7 +18,12 @@
 		CB1F61721FD0287A00B5F844 /* TenExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1F61711FD0287A00B5F844 /* TenExample.swift */; };
 		CB1F61741FD0288B00B5F844 /* TenExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1F61731FD0288B00B5F844 /* TenExample.storyboard */; };
 		CB1F61771FD02A0700B5F844 /* TenExampleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1F61761FD02A0700B5F844 /* TenExampleButton.swift */; };
+		CB1FFB3A1FE2BF2800FC95E6 /* TrainingAPITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1FFB381FE2BF2800FC95E6 /* TrainingAPITableViewCell.swift */; };
+		CB1FFB3B1FE2BF2800FC95E6 /* TrainingAPITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1FFB391FE2BF2800FC95E6 /* TrainingAPITableViewCell.xib */; };
 		CB22071F1FBB1EB3006B8FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB22071E1FBB1EB3006B8FD5 /* LaunchScreen.storyboard */; };
+		CB22363F1FD41D9500247BE5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB2236411FD41D9500247BE5 /* Localizable.strings */; };
+		CB2314E31FE00FEE0086E87B /* LTTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2314E21FE00FEE0086E87B /* LTTableViewController.swift */; };
+		CB2314E51FE010020086E87B /* LTTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2314E41FE010020086E87B /* LTTableView.storyboard */; };
 		CB263A7A1FB09B80003D0DB2 /* GurunaviAPI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB263A791FB09B80003D0DB2 /* GurunaviAPI.storyboard */; };
 		CB263A7C1FB09B96003D0DB2 /* GurunaviAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB263A7B1FB09B96003D0DB2 /* GurunaviAPIViewController.swift */; };
 		CB5196EE1FA5E6C000384439 /* MakeCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5196ED1FA5E6C000384439 /* MakeCheckViewController.swift */; };
@@ -57,7 +62,15 @@
 		CB1F61711FD0287A00B5F844 /* TenExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenExample.swift; sourceTree = "<group>"; };
 		CB1F61731FD0288B00B5F844 /* TenExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TenExample.storyboard; sourceTree = "<group>"; };
 		CB1F61761FD02A0700B5F844 /* TenExampleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenExampleButton.swift; sourceTree = "<group>"; };
+		CB1FFB381FE2BF2800FC95E6 /* TrainingAPITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAPITableViewCell.swift; sourceTree = "<group>"; };
+		CB1FFB391FE2BF2800FC95E6 /* TrainingAPITableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingAPITableViewCell.xib; sourceTree = "<group>"; };
 		CB22071E1FBB1EB3006B8FD5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB22363C1FD41C8600247BE5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CB2236421FD41FC900247BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB2236451FD4228F00247BE5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB2236471FD422A900247BE5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB2314E21FE00FEE0086E87B /* LTTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTTableViewController.swift; sourceTree = "<group>"; };
+		CB2314E41FE010020086E87B /* LTTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LTTableView.storyboard; sourceTree = "<group>"; };
 		CB263A791FB09B80003D0DB2 /* GurunaviAPI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GurunaviAPI.storyboard; sourceTree = "<group>"; };
 		CB263A7B1FB09B96003D0DB2 /* GurunaviAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GurunaviAPIViewController.swift; sourceTree = "<group>"; };
 		CB5196ED1FA5E6C000384439 /* MakeCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeCheckViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +158,15 @@
 			path = iPhoneXTwo;
 			sourceTree = "<group>";
 		};
+		CB2314E11FE00FC90086E87B /* LTStandBy */ = {
+			isa = PBXGroup;
+			children = (
+				CB2314E21FE00FEE0086E87B /* LTTableViewController.swift */,
+				CB2314E41FE010020086E87B /* LTTableView.storyboard */,
+			);
+			path = LTStandBy;
+			sourceTree = "<group>";
+		};
 		CB263A781FB09B5F003D0DB2 /* GurunaviAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +216,8 @@
 				CB5196EC1FA5E68E00384439 /* makeCheckList */,
 				CB0206A81FA2170000AA8BE5 /* iPhone X */,
 				CBB5AC441F9B397600C82907 /* AppDelegate.swift */,
+				CB2314E11FE00FC90086E87B /* LTStandBy */,
+				CB2236411FD41D9500247BE5 /* Localizable.strings */,
 				CB1B7B941FBDCCC2009521BF /* View.swift */,
 				CBB5AC461F9B397600C82907 /* ViewController.swift */,
 				CBB5AC481F9B397600C82907 /* Main.storyboard */,
@@ -239,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				CBCF70631FB873DD002C98B6 /* TrainingAPIViewController.swift */,
+				CB1FFB381FE2BF2800FC95E6 /* TrainingAPITableViewCell.swift */,
+				CB1FFB391FE2BF2800FC95E6 /* TrainingAPITableViewCell.xib */,
 				CBCF70651FB873EE002C98B6 /* TrainingAPI.storyboard */,
 			);
 			path = TrainingAPI;
@@ -309,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB2314E51FE010020086E87B /* LTTableView.storyboard in Resources */,
 				CBF7A2BE1FA9F69900241461 /* CollectionViewSecond.storyboard in Resources */,
 				CBB5AC4F1F9B397600C82907 /* LaunchScreen.storyboard in Resources */,
 				CB08EB7E1FA8A156003CB66C /* MakeCollectionView.storyboard in Resources */,
@@ -320,8 +347,10 @@
 				CBFB24B01FAC99100040B611 /* SureOfLocation.storyboard in Resources */,
 				CBCF70661FB873EE002C98B6 /* TrainingAPI.storyboard in Resources */,
 				CB0206AA1FA2173000AA8BE5 /* tenSample.storyboard in Resources */,
+				CB1FFB3B1FE2BF2800FC95E6 /* TrainingAPITableViewCell.xib in Resources */,
 				CB1F61741FD0288B00B5F844 /* TenExample.storyboard in Resources */,
 				CB22071F1FBB1EB3006B8FD5 /* LaunchScreen.storyboard in Resources */,
+				CB22363F1FD41D9500247BE5 /* Localizable.strings in Resources */,
 				CB0206B21FA21CDE00AA8BE5 /* TenSampleTableViewCell.xib in Resources */,
 				CB263A7A1FB09B80003D0DB2 /* GurunaviAPI.storyboard in Resources */,
 			);
@@ -394,7 +423,9 @@
 				CBF7A2C41FA9FC8100241461 /* PropotionalSizingCell.swift in Sources */,
 				CB1F61721FD0287A00B5F844 /* TenExample.swift in Sources */,
 				CBB5AC451F9B397600C82907 /* AppDelegate.swift in Sources */,
+				CB2314E31FE00FEE0086E87B /* LTTableViewController.swift in Sources */,
 				CB0206B11FA21CDE00AA8BE5 /* TenSampleTableViewCell.swift in Sources */,
+				CB1FFB3A1FE2BF2800FC95E6 /* TrainingAPITableViewCell.swift in Sources */,
 				CBF692E51FB33073002107D8 /* ExWhetherViewController.swift in Sources */,
 				CBFB24AE1FAC99010040B611 /* SureOfLocationViewController.swift in Sources */,
 				CB08EB801FA8A173003CB66C /* MakeCollectionViewController.swift in Sources */,
@@ -406,10 +437,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CB2236411FD41D9500247BE5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB2236421FD41FC900247BE5 /* Base */,
+				CB2236451FD4228F00247BE5 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CBB5AC481F9B397600C82907 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CBB5AC491F9B397600C82907 /* Base */,
+				CB2236471FD422A900247BE5 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -418,6 +459,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CBB5AC4E1F9B397600C82907 /* Base */,
+				CB22363C1FD41C8600247BE5 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -429,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -486,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -538,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HD34248KJ;
 				INFOPLIST_FILE = Mokumoku/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -554,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HD34248KJ;
 				INFOPLIST_FILE = Mokumoku/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

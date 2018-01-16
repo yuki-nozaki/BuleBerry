@@ -12,36 +12,24 @@ import GoogleMaps
 class ViewController: UIViewController, GMSMapViewDelegate, UIWebViewDelegate {
 
     var mapView: GMSMapView?
-//    var latitude = [Double]()
-//    var longitude = [Double]()
     var position = [CLLocationCoordinate2D]()
+    var names = [String]()
 
     // APIから取ってきた緯度経度をcameraに設定し、ピンを設置する
     // ボタンをクリックすると、緯度経度が再設定される
     
-//    override func loadView() {
-//        super.loadView()
-//        getInfo()
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let camera = GMSCameraPosition.camera(withLatitude: 34.933357, longitude: 135.760289, zoom: 6.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         
-        
         mapView?.isMyLocationEnabled = true
         view = mapView
         getInfo()
-//        createMarker()
-//        print("lat: \(latitude), lon:\(longitude)")
         mapView?.delegate = self
     }
 
-//    override func viewWillLayoutSubviews() {
-//        super.viewWillLayoutSubviews()
-//        createMarker()
-//    }
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         let coord = CLLocationCoordinate2DMake(34.933357, 135.760289)
         let panoView = GMSPanoramaView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height))
@@ -50,29 +38,12 @@ class ViewController: UIViewController, GMSMapViewDelegate, UIWebViewDelegate {
     }
     
     func createMarker() {
-//        let coordinates = [[latitude]: [longitude]]
-        
-//        latitude.forEach { (latidudeElement) in
-//            longitude.forEach({ (longtidudeElement) in
-//                var position = CLLocationCoordinate2D(latitude: latidudeElement, longitude: longtidudeElement)
-//                let marker = GMSMarker(position: position)
-//                marker.map = mapView
-//            })
-//        }
-        
         for pos in position {
             let marker = GMSMarker(position: pos)
             marker.map = mapView
         }
-//        var position = CLLocationCoordinate2D(latitude: , longitude: )
-//        for location in coordinates {
-////            guard let loc = location else {return}
-//            position = CLLocationCoordinate2D(latitude: location[0], longitude: location[1])
-//        }
-//        let marker = GMSMarker(position: position)
 //        marker.title = "Sydney"
 //        marker.snippet = "Australia"
-//        marker.map = mapView
     }
     
     func mapView(_ mapView: GMSMapView, didLongPressInfoWindowOf marker: GMSMarker) {
@@ -101,11 +72,14 @@ class ViewController: UIViewController, GMSMapViewDelegate, UIWebViewDelegate {
                     for num in rest {
                         let latNumber = String(describing: num["latitude"]!)
                         let lonNumber = String(describing: num["longitude"]!)
+                        let titleName = String(describing: num["name"]!)
                         guard let lat = Double(latNumber) else {return}
                         guard let lon = Double(lonNumber) else {return}
                         self.position.append(CLLocationCoordinate2D(latitude: lat, longitude: lon))
-                        print("latitude: \(latNumber), lontitude: \(lonNumber)")
+//                        print("latitude: \(latNumber), lontitude: \(lonNumber)")
+                        print("title: \(titleName)")
                     }
+//                    print("\(json)")
                 }
                 
                 DispatchQueue.main.async {
