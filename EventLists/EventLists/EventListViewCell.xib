@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="eventCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="138" id="KGk-i7-Jjw" customClass="EventListViewCell" customModule="EventLists" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="407" height="137.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="nA5-Dq-kjY">
+                        <rect key="frame" x="0.0" y="5" width="407" height="127.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="300" verticalHuggingPriority="300" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlW-n1-iYZ" userLabel="titleLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="407" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-wl-nHa" userLabel="addressLabel">
+                                <rect key="frame" x="0.0" y="53" width="407" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="200" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guP-Vi-urC" userLabel="eventPlaceLabel">
+                                <rect key="frame" x="0.0" y="102.5" width="407" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nA5-Dq-kjY" secondAttribute="bottom" constant="5" id="4Yr-D6-a15"/>
+                    <constraint firstItem="nA5-Dq-kjY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9M0-P2-bWh"/>
+                    <constraint firstItem="nA5-Dq-kjY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GlQ-hg-y9w"/>
+                    <constraint firstAttribute="trailing" secondItem="nA5-Dq-kjY" secondAttribute="trailing" id="RTw-Ae-DZK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="ZaM-wl-nHa" id="e1p-mS-0S8"/>
+                <outlet property="placeLabel" destination="guP-Vi-urC" id="E6p-Lg-rqt"/>
+                <outlet property="stackView" destination="nA5-Dq-kjY" id="ACm-fd-uTM"/>
+                <outlet property="titleLabel" destination="QlW-n1-iYZ" id="tfq-LH-dPb"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="92"/>
+        </tableViewCell>
+    </objects>
+</document>
