@@ -13,12 +13,13 @@ class ViewController: UIViewController {
     private var searchButton = UIButton()
     private var textField = UITextField()
     private var message = UILabel()
+    private var picker = UIPickerView()
     
     // Property
     private var datePicker = UIDatePicker()
     private var dateFomatter = DateFormatter()
     private var searchDateParam = Date()
-    private let requester = EventRequester()
+    private var searchCountryCode = ""
     
     fileprivate var eventList: Event!
     
@@ -44,15 +45,20 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-    func setup() {
+    fileprivate func setup() {
         // textFieldの設定
-        textField = UITextField(frame: CGRect(x: view.frame.width / 10, y: view.frame.height / 5, width: view.frame.width * 4 / 5, height: view.frame.height / 10))
+        textField = UITextField(frame: CGRect(x: view.frame.width / 10, y: view.frame.height / 5, width: view.frame.width * 2 / 5, height: view.frame.height / 10))
         textField.placeholder = textPlaceMesage
         textField.borderStyle = .roundedRect
         textField.textColor = .white
         textField.backgroundColor = .black
+        textField.clearButtonMode = .always
+        // 都道府県Pickerの設定
+        picker = UIPickerView(frame: CGRect(x: view.frame.width / 2, y: textField.frame.origin.y, width: textField.frame.width, height: textField.frame.height))
+        picker.delegate = self
+        picker.dataSource = self
         // labelの設定
-        message = UILabel(frame: CGRect(x: textField.frame.origin.x, y: view.frame.height * 3 / 10, width: textField.frame.width, height: textField.frame.height))
+        message = UILabel(frame: CGRect(x: textField.frame.origin.x, y: view.frame.height * 3 / 10, width: view.frame.width * 4 / 5, height: textField.frame.height))
         message.text = clickMessage
         message.textColor = .white
         message.backgroundColor = .gray
@@ -60,20 +66,21 @@ extension ViewController {
         message.layer.masksToBounds = true
         message.layer.cornerRadius = 10
         // 検索ボタンの設定
-        searchButton = UIButton(frame: CGRect(x: textField.frame.origin.x, y: view.frame.height / 2, width: textField.frame.width, height: textField.frame.height))
+        searchButton = UIButton(frame: CGRect(x: textField.frame.origin.x, y: view.frame.height / 2, width: message.frame.width, height: textField.frame.height))
         searchButton.addTarget(self, action: #selector(onClickSearchButton), for: .touchUpInside)
         searchButton.setTitle(searchMessage, for: .normal)
         searchButton.backgroundColor = .red
         searchButton.tintColor = .blue
         
         view.addSubview(textField)
+        view.addSubview(picker)
         view.addSubview(message)
         view.addSubview(searchButton)
         setDatePicker()
     }
     
     
-    func setDatePicker() {
+    fileprivate func setDatePicker() {
         datePicker.datePickerMode = .date
         datePicker.locale = Locale(identifier: "ja_JP")
         datePicker.minimumDate = Date()
@@ -87,7 +94,11 @@ extension ViewController {
         textField.inputAccessoryView = toolbar
     }
     
-    @objc func done() {
+    fileprivate func setPrefecture() {
+        
+    }
+    
+    @objc fileprivate func done() {
         textField.endEditing(true)
         
         // 日付のフォーマット
@@ -99,8 +110,31 @@ extension ViewController {
     }
     
     @objc func onClickSearchButton() {
-        //  画面を暗くする、リクエストが完了したことを伝える（タイマー？？？）
-        tableViewController = EventListViewController.instantiate(date: searchDateParam)
+        tableViewController = EventListViewController.instantiate(date: searchDateParam, countryCode: searchCountryCode)
         present(tableViewController, animated: true, completion: nil)
     }
+}
+
+// UIPickerViewDelegate
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return CountryStateEnum.allCases[row].rawValue
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+//        guard let countryCode = CountryStateEnum.allCases[row].countryCode, countryCode != "" else { return }
+        // CountryStateEnum.allCases[row].countryCode
+        searchCountryCode = CountryStateEnum.allCases[row].countryCode
+    }
+}
+
+extension ViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return CountryStateEnum.allCases.count
+    }
+
 }

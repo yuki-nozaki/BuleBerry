@@ -13,6 +13,7 @@
 		CB25751221B2B2F900D6C29A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25751021B2B2F900D6C29A /* Main.storyboard */; };
 		CB25751421B2B2FF00D6C29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB25751321B2B2FF00D6C29A /* Assets.xcassets */; };
 		CB25751721B2B2FF00D6C29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25751521B2B2FF00D6C29A /* LaunchScreen.storyboard */; };
+		CB34711621EA120200F1A214 /* CountryStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB34711521EA120200F1A214 /* CountryStateEnum.swift */; };
 		CB3D394B21CCD34B00FA94DE /* EventListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */; };
 		CB3D394C21CCD34B00FA94DE /* EventListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */; };
 		CB413CE021D10D7700645933 /* IndicatorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB413CDE21D10D7700645933 /* IndicatorViewCell.swift */; };
@@ -30,6 +31,7 @@
 		CB25751321B2B2FF00D6C29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB25751621B2B2FF00D6C29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB25751821B2B2FF00D6C29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB34711521EA120200F1A214 /* CountryStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStateEnum.swift; sourceTree = "<group>"; };
 		CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewCell.swift; sourceTree = "<group>"; };
 		CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListViewCell.xib; sourceTree = "<group>"; };
 		CB413CDE21D10D7700645933 /* IndicatorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorViewCell.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */,
 				CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */,
 				CB8B42DB21B2B37B009ADB67 /* EventRequester.swift */,
+				CB34711521EA120200F1A214 /* CountryStateEnum.swift */,
 				CB25751021B2B2F900D6C29A /* Main.storyboard */,
 				CB25751321B2B2FF00D6C29A /* Assets.xcassets */,
 				CB25751521B2B2FF00D6C29A /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 				CB21CB7D21BD141700BDC23F /* EventListViewController.swift in Sources */,
 				CB413CE021D10D7700645933 /* IndicatorViewCell.swift in Sources */,
 				CB25750F21B2B2F900D6C29A /* ViewController.swift in Sources */,
+				CB34711621EA120200F1A214 /* CountryStateEnum.swift in Sources */,
 				CB8B42DC21B2B37B009ADB67 /* EventRequester.swift in Sources */,
 				CB3D394B21CCD34B00FA94DE /* EventListViewCell.swift in Sources */,
 				CB8B42DE21B2BCE1009ADB67 /* ViewModel.swift in Sources */,

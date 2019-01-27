@@ -12,21 +12,24 @@ import SafariServices
 
 final class EventListViewController: UIViewController {
     
-    private var tableView: UITableView!
+    fileprivate var tableView: UITableView!
     private var returnButton: UIButton!
     private var date = Date()
+    private var countryCode = ""
     private var webView = WKWebView()
     
     private var indicatorBackgroundView: UIView!
     private var indicatorView = UIActivityIndicatorView()
     
     fileprivate let noUrlAlertTitle = "リンク先が見つかりません"
+    fileprivate let noEventListTitle = "検索結果が見つかりませんでした"
     fileprivate let okActionTitle = "OK"
     
     private let viewModel = ViewModel()
     private let eventRequester = EventRequester()
     
     fileprivate var eventList: Event!
+    fileprivate var scrollBeginingPoint: CGPoint!
     
     // message
     private let buttonTitle = "検索画面に戻る"
@@ -43,9 +46,10 @@ final class EventListViewController: UIViewController {
         indicatorBackgroundView.removeFromSuperview()
     }
     // TODO リクエストパラメータを付加する口を増やす　パラメータの塊を渡して、自由にリクエストできる様にする
-    static func instantiate(date: Date) -> EventListViewController {
+    static func instantiate(date: Date, countryCode: String) -> EventListViewController {
         let vc = EventListViewController()
         vc.date = date
+        vc.countryCode = countryCode
         return vc
     }
 }
@@ -72,10 +76,19 @@ extension EventListViewController {
         let webFrame = CGRect(x: 0, y: 20, width: self.view.frame.width, height: self.view.frame.height * 2 / 3)
         webView = WKWebView(frame: webFrame)
         // TODO VMでリストの取得を行うようにする（通信メソッドなので）
-        EventRequester.shared.request(by: date, completion: { (event) in
+        EventRequester.shared.request(by: date, at: countryCode, completion: { (event) in
             // VCで保持しているeventListにRequesterが拾ってきたeventを渡すように、クロージャで記載
-            // prefecture codeを12に指定して、都内限定のイベントを抽出する
-            self.eventList = event
+            if event.count > 0 {
+                self.eventList = event
+            } else {
+                let alert = UIAlertController(title: self.noEventListTitle, message: nil, preferredStyle: .alert)
+                let alertAction = UIAlertAction(title: self.okActionTitle, style: .default, handler:  { (action: UIAlertAction!) -> Void in
+                    self.dismiss(animated: true, completion: nil)
+                })
+                alert.addAction(alertAction)
+                self.present(alert, animated: true, completion: nil)
+            }
+
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -128,8 +141,30 @@ extension EventListViewController: UITableViewDelegate {
             alert.addAction(alertAction)
             present(alert, animated: true, completion: nil)
         }
+        
+        DispatchQueue.main.async {
+            self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+        }
     }
     
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        tableView = scrollView as? UITableView
+        scrollBeginingPoint = tableView.contentOffset
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        tableView = scrollView as? UITableView
+        var currentPoint = tableView.contentOffset
+        if let scrollBeginingPoint = scrollBeginingPoint {
+            if (scrollBeginingPoint.y < currentPoint.y) {
+                print("下へスクロール")
+                // TODO 追加リクエストを送るように修正
+                
+            } else {
+                print("上へスクロール")
+            }
+        }
+    }
 }
 
 extension EventListViewController: UITableViewDataSource {

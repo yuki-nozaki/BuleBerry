@@ -26,9 +26,11 @@ struct Events: Codable {
 
 struct URLList: Codable {
     // 必要に応じて、パラメータを付加できる様にしたい（今は一つのパラメータを付与する様にしている　※&で括るとか）
+    // 入力したキーワードで検索できるように修正する
+    // どこの都道府県でやってるかどうか - 割り当てられたIDを利用する（あらかじめ、enumで持っておく）
     enum BaseUrl: String {
         case study = "https://eventon.jp/api/events.json?ymd_between="
-        
+        // https://eventon.jp/api/events.json?prefecture_id=8,9,10,11,12,13,14
         func getUrl() -> String {
             switch self {
             case .study:
@@ -36,39 +38,32 @@ struct URLList: Codable {
             }
         }
     }
-    // TODO あらゆるパターンの検索条件に対応できるようにする
-//    enum append {
-//        case year
-//        case place
-//
-//        func getAppendParam(by beginDate: Date, destinationDate: Date) -> String {
-//            switch self {
-//            case .year:
-////                return BaseUrl.study.append("\(beginDate),\(destinationDate)")
-//            default:
-//                <#code#>
-//            }
-//        }
-//    }
 }
 
 final class EventRequester: NSObject {
     
     private let viewModel = ViewModel()
     private let currentDate = Date()
-    private var url = URL(string: URLList.BaseUrl.study.getUrl())
     private var urlString = URLList.BaseUrl.study.getUrl()
     
     static let shared = EventRequester()
     
     // どこかでパラメータを付与、プロパティに変更後のurlを反映させる必要がある
     // 日付パラメータの例：20180320,20180505
-    func request(by date: Date, completion: @escaping (Event) -> Void) {
+    func request(by date: Date, at country: String, completion: @escaping (Event) -> Void) {
         let nowDate = formatter(date: Date())
         let selectedDate = formatter(date: date)
         let yearAppendParam = "\(nowDate),\(selectedDate)"
-        
         urlString.append(yearAppendParam)
+//        var countryCode = 0
+        if country != "" {
+            guard let countryCodeInt = Int(country) else { return }
+//            countryCode = countryCodeInt
+//            let countryCodeUrl = "&prefecture_id=" + "\(countryCode)"
+            let countryCodeUrl = "&prefecture_id=" + "\(countryCodeInt)"
+            urlString.append(countryCodeUrl)
+        }
+        
         guard let requestUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         guard let url = URL(string: requestUrlString) else { return }
 
@@ -82,6 +77,7 @@ final class EventRequester: NSObject {
             do {
                 let json = try JSONDecoder().decode(Event.self, from: data)
                 // TODO ViewModelにjsonを渡すように修正
+                // TODO レスポンスが空の場合、検索結果がなかったことを伝える
                 completion(json)
                 // TODO 追加リクエストはどうするべきか。。。
             }
