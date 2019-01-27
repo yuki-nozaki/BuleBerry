@@ -13,6 +13,8 @@
 		CB25751221B2B2F900D6C29A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25751021B2B2F900D6C29A /* Main.storyboard */; };
 		CB25751421B2B2FF00D6C29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB25751321B2B2FF00D6C29A /* Assets.xcassets */; };
 		CB25751721B2B2FF00D6C29A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB25751521B2B2FF00D6C29A /* LaunchScreen.storyboard */; };
+		CB2EB1B421FDA5FB006B5900 /* GIFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2EB1B321FDA5FB006B5900 /* GIFViewController.swift */; };
+		CB2EB1B721FDA6EF006B5900 /* Rotating_earth.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB2EB1B621FDA6EF006B5900 /* Rotating_earth.gif */; };
 		CB34711621EA120200F1A214 /* CountryStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB34711521EA120200F1A214 /* CountryStateEnum.swift */; };
 		CB3D394B21CCD34B00FA94DE /* EventListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */; };
 		CB3D394C21CCD34B00FA94DE /* EventListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */; };
@@ -31,6 +33,8 @@
 		CB25751321B2B2FF00D6C29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB25751621B2B2FF00D6C29A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB25751821B2B2FF00D6C29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB2EB1B321FDA5FB006B5900 /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
+		CB2EB1B621FDA6EF006B5900 /* Rotating_earth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Rotating_earth.gif; sourceTree = "<group>"; };
 		CB34711521EA120200F1A214 /* CountryStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStateEnum.swift; sourceTree = "<group>"; };
 		CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewCell.swift; sourceTree = "<group>"; };
 		CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListViewCell.xib; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			children = (
 				CB25750C21B2B2F900D6C29A /* AppDelegate.swift */,
 				CB25750E21B2B2F900D6C29A /* ViewController.swift */,
+				CB2EB1B321FDA5FB006B5900 /* GIFViewController.swift */,
 				CB8B42DD21B2BCE1009ADB67 /* ViewModel.swift */,
 				CB413CDE21D10D7700645933 /* IndicatorViewCell.swift */,
 				CB413CDF21D10D7700645933 /* IndicatorViewCell.xib */,
@@ -83,9 +88,18 @@
 				CB25751021B2B2F900D6C29A /* Main.storyboard */,
 				CB25751321B2B2FF00D6C29A /* Assets.xcassets */,
 				CB25751521B2B2FF00D6C29A /* LaunchScreen.storyboard */,
+				CB2EB1B521FDA6EF006B5900 /* Resource */,
 				CB25751821B2B2FF00D6C29A /* Info.plist */,
 			);
 			path = EventLists;
+			sourceTree = "<group>";
+		};
+		CB2EB1B521FDA6EF006B5900 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CB2EB1B621FDA6EF006B5900 /* Rotating_earth.gif */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +165,7 @@
 				CB25751421B2B2FF00D6C29A /* Assets.xcassets in Resources */,
 				CB25751221B2B2F900D6C29A /* Main.storyboard in Resources */,
 				CB3D394C21CCD34B00FA94DE /* EventListViewCell.xib in Resources */,
+				CB2EB1B721FDA6EF006B5900 /* Rotating_earth.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +184,7 @@
 				CB3D394B21CCD34B00FA94DE /* EventListViewCell.swift in Sources */,
 				CB8B42DE21B2BCE1009ADB67 /* ViewModel.swift in Sources */,
 				CB25750D21B2B2F900D6C29A /* AppDelegate.swift in Sources */,
+				CB2EB1B421FDA5FB006B5900 /* GIFViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

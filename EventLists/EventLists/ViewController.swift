@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     private var textField = UITextField()
     private var message = UILabel()
     private var picker = UIPickerView()
+    private var playBackButton = UIButton()
     
     // Property
     private var datePicker = UIDatePicker()
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
     private let clickMessage = "上記の日付で検索します"
     private let textPlaceMesage = "日付を入力してください"
     private let searchMessage = "検索します"
+    private let gifMessage = "gifを再生"
     
     // 日時を設定するためのボタンと遷移及びリクエストするためのボタンを配置する（できれば戻るボタンも）を配置
     override func viewDidLoad() {
@@ -72,10 +74,18 @@ extension ViewController {
         searchButton.backgroundColor = .red
         searchButton.tintColor = .blue
         
+        // GIF再生ボタンの設定
+        playBackButton = UIButton(frame: CGRect(x: textField.frame.origin.x, y: message.frame.origin.y + message.frame.height, width: message.frame.width, height: textField.frame.height))
+        playBackButton.addTarget(self, action: #selector(onClickGifButton), for: .touchUpInside)
+        playBackButton.setTitle(gifMessage, for: .normal)
+        playBackButton.backgroundColor = .green
+
+        
         view.addSubview(textField)
         view.addSubview(picker)
         view.addSubview(message)
         view.addSubview(searchButton)
+        view.addSubview(playBackButton)
         setDatePicker()
     }
     
@@ -112,6 +122,11 @@ extension ViewController {
     @objc func onClickSearchButton() {
         tableViewController = EventListViewController.instantiate(date: searchDateParam, countryCode: searchCountryCode)
         present(tableViewController, animated: true, completion: nil)
+    }
+    
+    @objc func onClickGifButton() {
+        let vc = GIFViewController()
+        present(vc, animated: true, completion: nil)
     }
 }
 
