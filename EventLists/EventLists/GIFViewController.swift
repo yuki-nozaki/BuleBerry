@@ -8,10 +8,12 @@
 
 import UIKit
 import WebKit
+import SwiftyGif
 
 final class GIFViewController: UIViewController {
     
     private var webView: WKWebView!
+    private var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +40,16 @@ extension GIFViewController {
     }
     
     // UIImageViewで、GIFを再生する場合
+    // リモートから取得したUIImageを、ローカルで再生できるようにする
     fileprivate func createGIFIamgeView() {
+        let imageViewFrame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        imageView = UIImageView(frame: imageViewFrame)
         
+        
+        let image = UIImage(gifName: "Rotating_earth")
+        imageView.image = image
+        self.view.addSubview(imageView)
+//        let gifImageUrlString = "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Rotating_earth_(large).gif"
+//        guard let url = URL(string: gifImageUrlString) else { return }
     }
 }

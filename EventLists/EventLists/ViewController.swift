@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     // UIParts
     private var searchButton = UIButton()
     private var textField = UITextField()
@@ -85,7 +85,8 @@ extension ViewController {
         view.addSubview(picker)
         view.addSubview(message)
         view.addSubview(searchButton)
-        view.addSubview(playBackButton)
+        // GIF再生確認用 - 必要な時にコメントアウト外す
+//        view.addSubview(playBackButton)
         setDatePicker()
     }
     
@@ -102,10 +103,6 @@ extension ViewController {
 
         textField.inputView = datePicker
         textField.inputAccessoryView = toolbar
-    }
-    
-    fileprivate func setPrefecture() {
-        
     }
     
     @objc fileprivate func done() {
@@ -137,12 +134,11 @@ extension ViewController: UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-//        guard let countryCode = CountryStateEnum.allCases[row].countryCode, countryCode != "" else { return }
-        // CountryStateEnum.allCases[row].countryCode
         searchCountryCode = CountryStateEnum.allCases[row].countryCode
     }
 }
 
+// UIPickerViewDataSource
 extension ViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

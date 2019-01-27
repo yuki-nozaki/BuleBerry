@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F601004041DF7757608A63D /* Pods_EventLists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5D0DA10DAA47F9C48E0651 /* Pods_EventLists.framework */; };
 		CB21CB7D21BD141700BDC23F /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB21CB7C21BD141700BDC23F /* EventListViewController.swift */; };
 		CB25750D21B2B2F900D6C29A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB25750C21B2B2F900D6C29A /* AppDelegate.swift */; };
 		CB25750F21B2B2F900D6C29A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB25750E21B2B2F900D6C29A /* ViewController.swift */; };
@@ -25,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E06AAE0EA383ED9C2D66726 /* Pods-EventLists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventLists.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventLists/Pods-EventLists.release.xcconfig"; sourceTree = "<group>"; };
+		AF5D0DA10DAA47F9C48E0651 /* Pods_EventLists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventLists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E8F746C62EA465A1B7EC5B /* Pods-EventLists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventLists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventLists/Pods-EventLists.debug.xcconfig"; sourceTree = "<group>"; };
 		CB21CB7C21BD141700BDC23F /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		CB25750921B2B2F900D6C29A /* EventLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB25750C21B2B2F900D6C29A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,7 @@
 		CB25751821B2B2FF00D6C29A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB2EB1B321FDA5FB006B5900 /* GIFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewController.swift; sourceTree = "<group>"; };
 		CB2EB1B621FDA6EF006B5900 /* Rotating_earth.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Rotating_earth.gif; sourceTree = "<group>"; };
+		CB2EB1B821FDB061006B5900 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		CB34711521EA120200F1A214 /* CountryStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStateEnum.swift; sourceTree = "<group>"; };
 		CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewCell.swift; sourceTree = "<group>"; };
 		CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListViewCell.xib; sourceTree = "<group>"; };
@@ -49,17 +54,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F601004041DF7757608A63D /* Pods_EventLists.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17027C7A42D9A58DAEBCB93D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3E8F746C62EA465A1B7EC5B /* Pods-EventLists.debug.xcconfig */,
+				7E06AAE0EA383ED9C2D66726 /* Pods-EventLists.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		733141C370AAEC5221B88543 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5D0DA10DAA47F9C48E0651 /* Pods_EventLists.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB25750021B2B2F900D6C29A = {
 			isa = PBXGroup;
 			children = (
 				CB25750B21B2B2F900D6C29A /* EventLists */,
 				CB25750A21B2B2F900D6C29A /* Products */,
+				17027C7A42D9A58DAEBCB93D /* Pods */,
+				733141C370AAEC5221B88543 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,15 +101,11 @@
 			children = (
 				CB25750C21B2B2F900D6C29A /* AppDelegate.swift */,
 				CB25750E21B2B2F900D6C29A /* ViewController.swift */,
-				CB2EB1B321FDA5FB006B5900 /* GIFViewController.swift */,
 				CB8B42DD21B2BCE1009ADB67 /* ViewModel.swift */,
-				CB413CDE21D10D7700645933 /* IndicatorViewCell.swift */,
-				CB413CDF21D10D7700645933 /* IndicatorViewCell.xib */,
-				CB21CB7C21BD141700BDC23F /* EventListViewController.swift */,
-				CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */,
-				CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */,
-				CB8B42DB21B2B37B009ADB67 /* EventRequester.swift */,
+				CB2EB1B921FDB8CB006B5900 /* EventList */,
+				CB2EB1B321FDA5FB006B5900 /* GIFViewController.swift */,
 				CB34711521EA120200F1A214 /* CountryStateEnum.swift */,
+				CB2EB1B821FDB061006B5900 /* Bridging-Header.h */,
 				CB25751021B2B2F900D6C29A /* Main.storyboard */,
 				CB25751321B2B2FF00D6C29A /* Assets.xcassets */,
 				CB25751521B2B2FF00D6C29A /* LaunchScreen.storyboard */,
@@ -102,6 +123,27 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		CB2EB1B921FDB8CB006B5900 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				CB21CB7C21BD141700BDC23F /* EventListViewController.swift */,
+				CB8B42DB21B2B37B009ADB67 /* EventRequester.swift */,
+				CB2EB1BA21FDB8EA006B5900 /* Cell */,
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
+		CB2EB1BA21FDB8EA006B5900 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CB3D394921CCD34B00FA94DE /* EventListViewCell.swift */,
+				CB3D394A21CCD34B00FA94DE /* EventListViewCell.xib */,
+				CB413CDE21D10D7700645933 /* IndicatorViewCell.swift */,
+				CB413CDF21D10D7700645933 /* IndicatorViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB25751B21B2B2FF00D6C29A /* Build configuration list for PBXNativeTarget "EventLists" */;
 			buildPhases = (
+				C6B1C9CA3FE380E36646C38F /* [CP] Check Pods Manifest.lock */,
 				CB25750521B2B2F900D6C29A /* Sources */,
 				CB25750621B2B2F900D6C29A /* Frameworks */,
 				CB25750721B2B2F900D6C29A /* Resources */,
+				CA789E231DCFF18DCDFC4C06 /* [CP] Embed Pods Frameworks */,
+				9FB5596E01E8D5AB7AB0C365 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +215,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FB5596E01E8D5AB7AB0C365 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventLists/Pods-EventLists-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B1C9CA3FE380E36646C38F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventLists-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA789E231DCFF18DCDFC4C06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventLists/Pods-EventLists-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventLists/Pods-EventLists-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB25750521B2B2F900D6C29A /* Sources */ = {
@@ -328,9 +427,11 @@
 		};
 		CB25751C21B2B2FF00D6C29A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E8F746C62EA465A1B7EC5B /* Pods-EventLists.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7HD34248KJ;
 				INFOPLIST_FILE = EventLists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +440,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = NewBlueBerry.EventLists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)EventLists/Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,9 +449,11 @@
 		};
 		CB25751D21B2B2FF00D6C29A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E06AAE0EA383ED9C2D66726 /* Pods-EventLists.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7HD34248KJ;
 				INFOPLIST_FILE = EventLists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,6 +462,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = NewBlueBerry.EventLists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)EventLists/Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -154,7 +154,7 @@ extension EventListViewController: UITableViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         tableView = scrollView as? UITableView
-        var currentPoint = tableView.contentOffset
+        let currentPoint = tableView.contentOffset
         if let scrollBeginingPoint = scrollBeginingPoint {
             if (scrollBeginingPoint.y < currentPoint.y) {
                 print("下へスクロール")

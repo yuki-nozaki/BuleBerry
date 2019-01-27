@@ -60,7 +60,7 @@ enum CountryStateEnum: String, CaseIterable {
     var countryCode: String {
         switch self {
         case .defalut:
-            return ""
+            return "13" // 選択してない時は、都内のイベントを探す
         case .hokkaido:
             return "1"
         case .aomori:
