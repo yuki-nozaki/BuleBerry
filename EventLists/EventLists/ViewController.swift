@@ -29,14 +29,19 @@ final class ViewController: UIViewController {
 
     // message
     private let clickMessage = "上記の日付で検索します"
-    private let textPlaceMesage = "日付を入力してください"
-    private let searchMessage = "検索します"
+    private let textPlaceMesage = "日付を指定"
+    private let searchMessage = "検索"
     private let gifMessage = "gifを再生"
     
     // 日時を設定するためのボタンと遷移及びリクエストするためのボタンを配置する（できれば戻るボタンも）を配置
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        picker.selectRow(0, inComponent: 0, animated: false)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -50,9 +55,10 @@ extension ViewController {
     fileprivate func setup() {
         // textFieldの設定
         textField = UITextField(frame: CGRect(x: view.frame.width / 10, y: view.frame.height / 5, width: view.frame.width * 2 / 5, height: view.frame.height / 10))
-        textField.placeholder = textPlaceMesage
+        textField.attributedPlaceholder = NSAttributedString(string: textPlaceMesage, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         textField.borderStyle = .roundedRect
         textField.textColor = .white
+        textField.font = UIFont.systemFont(ofSize: 22)
         textField.backgroundColor = .black
         textField.clearButtonMode = .always
         // 都道府県Pickerの設定
@@ -62,6 +68,7 @@ extension ViewController {
         // labelの設定
         message = UILabel(frame: CGRect(x: textField.frame.origin.x, y: view.frame.height * 3 / 10, width: view.frame.width * 4 / 5, height: textField.frame.height))
         message.text = clickMessage
+        message.font = UIFont.systemFont(ofSize: 22)
         message.textColor = .white
         message.backgroundColor = .gray
         message.textAlignment = .center
@@ -71,6 +78,7 @@ extension ViewController {
         searchButton = UIButton(frame: CGRect(x: textField.frame.origin.x, y: view.frame.height / 2, width: message.frame.width, height: textField.frame.height))
         searchButton.addTarget(self, action: #selector(onClickSearchButton), for: .touchUpInside)
         searchButton.setTitle(searchMessage, for: .normal)
+        searchButton.titleLabel?.font = UIFont.systemFont(ofSize: 22)
         searchButton.backgroundColor = .red
         searchButton.tintColor = .blue
         
@@ -110,7 +118,8 @@ extension ViewController {
         
         // 日付のフォーマット
         dateFomatter = DateFormatter()
-        dateFomatter.dateFormat = "yyyyMMdd"
+//        dateFomatter.dateFormat = "yyyyMMdd"
+        dateFomatter.dateFormat = "yyyy-M-d"
         textField.text = "\(dateFomatter.string(from: datePicker.date))"
         // リクエストするためのパラメータを保持させる
         searchDateParam = datePicker.date
@@ -125,6 +134,7 @@ extension ViewController {
         let vc = GIFViewController()
         present(vc, animated: true, completion: nil)
     }
+    
 }
 
 // UIPickerViewDelegate
