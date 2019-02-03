@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F601004041DF7757608A63D /* Pods_EventLists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5D0DA10DAA47F9C48E0651 /* Pods_EventLists.framework */; };
+		CB191F2922058E3000E6E699 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB191F2822058E3000E6E699 /* MapViewController.swift */; };
 		CB21CB7D21BD141700BDC23F /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB21CB7C21BD141700BDC23F /* EventListViewController.swift */; };
 		CB25750D21B2B2F900D6C29A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB25750C21B2B2F900D6C29A /* AppDelegate.swift */; };
 		CB25750F21B2B2F900D6C29A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB25750E21B2B2F900D6C29A /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 		7E06AAE0EA383ED9C2D66726 /* Pods-EventLists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventLists.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventLists/Pods-EventLists.release.xcconfig"; sourceTree = "<group>"; };
 		AF5D0DA10DAA47F9C48E0651 /* Pods_EventLists.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventLists.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E8F746C62EA465A1B7EC5B /* Pods-EventLists.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventLists.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventLists/Pods-EventLists.debug.xcconfig"; sourceTree = "<group>"; };
+		CB191F2822058E3000E6E699 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = SOURCE_ROOT; };
 		CB21CB7C21BD141700BDC23F /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		CB25750921B2B2F900D6C29A /* EventLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB25750C21B2B2F900D6C29A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				CB2EB1B921FDB8CB006B5900 /* EventList */,
 				CB2EB1B321FDA5FB006B5900 /* GIFViewController.swift */,
 				CB34711521EA120200F1A214 /* CountryStateEnum.swift */,
+				CB191F2822058E3000E6E699 /* MapViewController.swift */,
 				CB2EB1B821FDB061006B5900 /* Bridging-Header.h */,
 				CB25751021B2B2F900D6C29A /* Main.storyboard */,
 				CB25751321B2B2FF00D6C29A /* Assets.xcassets */,
@@ -223,9 +226,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventLists/Pods-EventLists-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -278,6 +286,7 @@
 				CB21CB7D21BD141700BDC23F /* EventListViewController.swift in Sources */,
 				CB413CE021D10D7700645933 /* IndicatorViewCell.swift in Sources */,
 				CB25750F21B2B2F900D6C29A /* ViewController.swift in Sources */,
+				CB191F2922058E3000E6E699 /* MapViewController.swift in Sources */,
 				CB34711621EA120200F1A214 /* CountryStateEnum.swift in Sources */,
 				CB8B42DC21B2B37B009ADB67 /* EventRequester.swift in Sources */,
 				CB3D394B21CCD34B00FA94DE /* EventListViewCell.swift in Sources */,

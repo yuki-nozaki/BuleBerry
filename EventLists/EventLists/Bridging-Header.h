@@ -10,5 +10,6 @@
 #define Bridging_Header_h
 
 #import <SwiftyGif/SwiftyGif.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 #endif /* Bridging_Header_h */

@@ -81,12 +81,15 @@ extension EventListViewController {
             if event.count > 0 {
                 self.eventList = event
             } else {
+                
                 let alert = UIAlertController(title: self.noEventListTitle, message: nil, preferredStyle: .alert)
                 let alertAction = UIAlertAction(title: self.okActionTitle, style: .default, handler:  { (action: UIAlertAction!) -> Void in
                     self.dismiss(animated: true, completion: nil)
                 })
                 alert.addAction(alertAction)
-                self.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.async {
+                    self.present(alert, animated: true, completion: nil)
+                }
             }
 
             DispatchQueue.main.async {
@@ -127,20 +130,24 @@ extension EventListViewController {
 }
 
 extension EventListViewController: UITableViewDelegate {
-    
+    // TODO 選択した箇所の地図を描画できるようにする
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Urlがあれば、WebViewで開くように
         tableView.reloadData()
-        if let urlText = getEventUrl(at: indexPath.row), urlText != "" {
-            guard let url = URL(string: urlText) else { return }
-            let safariVC = SFSafariViewController(url: url)
-            present(safariVC, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: noUrlAlertTitle, message: nil, preferredStyle: .actionSheet)
-            let alertAction = UIAlertAction(title: okActionTitle, style: .default, handler: nil)
-            alert.addAction(alertAction)
-            present(alert, animated: true, completion: nil)
-        }
+        // 選択したちイベントの場所から、緯度経度を取得することは可能か？？？
+        // vcを初期化する際に、緯度経度を渡さずに、managerに取得させるようにして、地図viewに描画する
+        let mapViewController = MapViewController()
+        present(mapViewController, animated: true, completion: nil)
+//        if let urlText = getEventUrl(at: indexPath.row), urlText != "" {
+//            guard let url = URL(string: urlText) else { return }
+//            let safariVC = SFSafariViewController(url: url)
+//            present(safariVC, animated: true, completion: nil)
+//        } else {
+//            let alert = UIAlertController(title: noUrlAlertTitle, message: nil, preferredStyle: .actionSheet)
+//            let alertAction = UIAlertAction(title: okActionTitle, style: .default, handler: nil)
+//            alert.addAction(alertAction)
+//            present(alert, animated: true, completion: nil)
+//        }
         
         DispatchQueue.main.async {
             self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)

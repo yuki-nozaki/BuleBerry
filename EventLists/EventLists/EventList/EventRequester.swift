@@ -48,18 +48,14 @@ final class EventRequester: NSObject {
     
     static let shared = EventRequester()
     
-    // どこかでパラメータを付与、プロパティに変更後のurlを反映させる必要がある
     // 日付パラメータの例：20180320,20180505
     func request(by date: Date, at country: String, completion: @escaping (Event) -> Void) {
         let nowDate = formatter(date: Date())
         let selectedDate = formatter(date: date)
         let yearAppendParam = "\(nowDate),\(selectedDate)"
         urlString.append(yearAppendParam)
-//        var countryCode = 0
         if country != "" {
             guard let countryCodeInt = Int(country) else { return }
-//            countryCode = countryCodeInt
-//            let countryCodeUrl = "&prefecture_id=" + "\(countryCode)"
             let countryCodeUrl = "&prefecture_id=" + "\(countryCodeInt)"
             urlString.append(countryCodeUrl)
         }
